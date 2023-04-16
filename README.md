@@ -1,3 +1,5 @@
+### Exploding-Kitten Game using react-redux-thunk
+
 ### Website [Exploding-Kitten-Game](https://vaibhav-exploding-kitten.netlify.app/)
 ### `npm install`
 
