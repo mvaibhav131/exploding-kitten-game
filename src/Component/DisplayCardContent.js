@@ -6,20 +6,23 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 const DisplayCardContent = ({ cardContent, cardRemaining, res, defuseCardNumber }) => (
-  <Card>
+  <Card >
     <CardContent>
-      <Grid container>
+      <Grid style={{fontFamily:"sans-serif "}} container>
         <Grid item xs={9}>
-          <Typography variant='h6'>{cardContent}</Typography>
+          <Typography style={{color: "red",padding: "10px",
+            fontFamily: "Arial",fontSize:"33px"}} variant='h3'>{cardContent}</Typography>
         </Grid>
-        <Grid item xs={3}>
-          <Typography variant='h6'>Cards Left: {cardRemaining}</Typography>
+        <Grid item xs={2}>
+          <Typography style={{color: "green",padding: "10px",textAlign:"center",
+            fontFamily: "Arial",fontSize:"21px"}} variant='h6'>Remaining Cards: {cardRemaining}</Typography>
         </Grid>
         <Grid item xs={9}>
           <Typography variant='body2'>{res}</Typography>
         </Grid>
         <Grid item xs={3}>
-          <Typography variant='body2'>Defuse: {defuseCardNumber}</Typography>
+          <Typography style={{color: "teal",padding: "10px",textAlign:"center",
+            fontFamily: "Arial",fontSize:"18px",marginTop:"25px",marginLeft:"-9px"}} variant='body2'>Defuse Count: {defuseCardNumber}</Typography>
         </Grid>
       </Grid>
     </CardContent>
