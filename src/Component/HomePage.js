@@ -16,16 +16,16 @@ class HomePage extends Component {
     const { cardFlipped, cardArray, defuseCardNumber, res } = this.props.card;
     console.log(this.props.card);
     return (
-      <Grid container direction='row' style={{ marginTop: 30 }}>
+      <Grid  container direction='row' style={{ marginTop: 100 }}>
         <Grid item sm={3} />
         <Grid item xs={12} sm={6}>
-          <DisplayCardContent cardContent={cardFlipped} cardRemaining={cardArray.length} defuseCardNumber={defuseCardNumber} res={res} />
+          <DisplayCardContent  cardContent={cardFlipped} cardRemaining={cardArray.length} defuseCardNumber={defuseCardNumber} res={res} />
         </Grid>
         <Grid item sm={3} />
         <Grid item sm={3} />
         <Grid item xs={12} sm={6} style={{ marginTop: 30 }}>
-          <Button variant='contained' color='primary' onClick={this.flipCard}>
-            Flip
+          <Button variant='contained' color='secondary' onClick={this.flipCard}>
+            Click Here To Show Your Card
           </Button>
         </Grid>
         <Grid item sm={3} />
