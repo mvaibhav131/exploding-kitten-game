@@ -8,6 +8,8 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
+        <h1 style={{color: "blue",padding: "10px",
+      fontFamily: "Arial"}}>Exploding Kitten Game</h1>
         <HomePage />
       </Provider>
     );
