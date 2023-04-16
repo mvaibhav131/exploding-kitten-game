@@ -28,7 +28,7 @@ export const flipCard = () => (dispatch, getState) => {
   const card = cardArray[cardArray.length - 1];
   dispatch(flippedCard(card));
   if (card === 'Cat card') dispatch(catCard());
-  if (card === 'Defuse card') dispatch(defuseCard(defuseCardNumber + 1, 'Added Defuse Card'));
+  if (card === 'Defuse card') dispatch(defuseCard(defuseCardNumber + 1, 'Defuse Card Added in Count'));
   if (card === 'Exploding kitten card') {
     if (defuseCardNumber !== 0) dispatch(defuseCard(defuseCardNumber - 1, 'Defuse Card Used'));
     else {
